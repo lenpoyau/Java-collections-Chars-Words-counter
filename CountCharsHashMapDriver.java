@@ -8,7 +8,7 @@ public class CountCharsHashMapDriver {
 	public static void main(String[] args) {
 		String str = "This is a great thing";
 		String str2 = "This is a nice occassion. This is a great thing. We're making great progress. It's a good feeling";
-		char[] lineOfChars = str.toCharArray();
+		char[] lineOfChars = str.toCharArray();   // break up the string into chars and store in char array.
 		Map<Character, Integer> occurrences = new HashMap<>();
 		Map<String, Integer> stringOccurences = new HashMap<>();
 		
@@ -23,8 +23,6 @@ public class CountCharsHashMapDriver {
 		// Break up the string into words using white space as separator
 		// and store each word as an element in a string array  
 		String[] words = str2withoutperiods.split(" ");
-		
-		// System.out.println("Testing!!! " + str2withoutperiods);
 		
 		// Iterate through the character array lineOfChars and
 		// Find the number of occurrences each unique char is found in the HashMap named occurrences
@@ -49,7 +47,7 @@ public class CountCharsHashMapDriver {
 			}
 		}
 		
-		System.out.println("String: " + str + "\n");
+	System.out.println("String: " + str + "\n");
         System.out.println("Number of times a character occured in the above string");
         System.out.println(occurrences);
         
